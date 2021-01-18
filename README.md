@@ -6,7 +6,7 @@ Code and results when ran on Windows 10 64bits, i7 5820K, PHP 8.0.0:
 <?php // Run this in your terminal with: php hash_speed_simple_benchmark.php
 
 $loops = 100000;
-$str = "This string will be hashed";
+$str = 'This string will be hashed';
 $results = [];
 $hash = '';
 $largestAlgoNameLength = 1;
@@ -14,12 +14,12 @@ foreach (hash_algos() as $algo) {
 	if (strlen($algo) > $largestAlgoNameLength) {
 		$largestAlgoNameLength = strlen($algo);
 	}
-	$tss = microtime(true);
+	$started = microtime(true);
 	for ($i = 0; $i < $loops; $i++) {
 		$hash = hash($algo, $str, false);
 	}
-	$tse = microtime(true);
-	$results[$algo] = sprintf("%'06.4f", $tse - $tss) . "\t$hash";
+	$ended = microtime(true);
+	$results[$algo] = sprintf("%'06.4f", $ended - $started) . "\t$hash";
 }
 asort($results);
 foreach ($results as $algo => $result) {
