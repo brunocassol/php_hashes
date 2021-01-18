@@ -1,4 +1,4 @@
-# Simple benchmark of hash algorithms
+# Simple benchmark of PHP hash algorithms
 
 Code and results when ran on Windows 10 64bits, i7 5820K, PHP 8.0.0:
 
