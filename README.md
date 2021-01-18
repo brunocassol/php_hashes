@@ -1,6 +1,6 @@
 # Simple benchmark of hash algorithms
 
-Code and results when ran on my Windows 10 64bits, i7 5820K, PHP 8.0.0:
+Code and results when ran on Windows 10 64bits, i7 5820K, PHP 8.0.0:
 
 ```php
 <?php // Run this in your terminal with: php hash_speed_simple_benchmark.php
