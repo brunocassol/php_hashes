@@ -26,7 +26,7 @@ foreach ($results as $algo => $result) {
 	echo str_pad($algo, $largestAlgoNameLength) . "  $result\n";
 }
 
-/* Output I got on Windows 10 64 bits Intel i7 5820k:
+/* Output I got on my machine (Windows 10 64 bits, i7 5820k, PHP 8.0.0):
 
 fnv132       0.0418     384f2e7c
 fnv1a32      0.0418     b41d18f7
