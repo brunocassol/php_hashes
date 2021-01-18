@@ -2,7 +2,7 @@
 
 Code and results when ran on my Windows 10 64bits, i7 5820K, PHP 8.0.0:
 
-´´´php
+```php
 <?php // Run this in your terminal with: php hash_speed_simple_benchmark.php
 
 $loops = 100000;
@@ -82,4 +82,4 @@ snefru256    0.4264     e1fc6cf4f178d10ffea1a0d299702b84beb490016cb85ed731c5b633
 snefru       0.4273     10ba5b1b0a000841c2eac7cb9a6db249885314389751f92f397d228c22bd61da
 md2          1.2724     89ed38d9c1970f89c2c262db648d00fb
 */
-´´´
+```
